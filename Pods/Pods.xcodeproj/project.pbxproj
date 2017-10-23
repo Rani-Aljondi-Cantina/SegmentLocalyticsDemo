@@ -1,0 +1,1501 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		028DB23DC95D9761C35D506D17762DBF /* SEGStoreKitTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 01E3BA24A2A62422EB391010F92EDFF1 /* SEGStoreKitTracker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04AF3833868461758786B13AF1250348 /* SEGIdentifyPayload.h in Headers */ = {isa = PBXBuildFile; fileRef = 042EB09852ED86A23A69995F7B48A439 /* SEGIdentifyPayload.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05B02FB04AC7960097979A27838A329F /* SEGUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE59845DF6A03BBAD90144576E774C0 /* SEGUtils.m */; };
+		06A8F4E929B0116A5DC922C29AAE5B19 /* SEGAnalyticsUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = F78014622108E2D04BE80236CDA1A834 /* SEGAnalyticsUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08FDCD99391AE1F2A90EA076969B413B /* SEGAliasPayload.h in Headers */ = {isa = PBXBuildFile; fileRef = E4056589A69F932832F0CD8A028DB406 /* SEGAliasPayload.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0AB997B382C4EFCFFE4C7C63E102521F /* MessageBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D759F6A4D199E1FCA2A26197D0E373 /* MessageBuilder.swift */; };
+		15B805BD8450F92206B74428FDD31E62 /* SEGAliasPayload.m in Sources */ = {isa = PBXBuildFile; fileRef = 31356084C2A4AE8FE5654F4489C56DCB /* SEGAliasPayload.m */; };
+		166505FCEB3327D81DFC46DE7429C691 /* SEGSerializableValue.h in Headers */ = {isa = PBXBuildFile; fileRef = B61C26778201D2AA5529A6900C1060BF /* SEGSerializableValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17CC9BCC5BED6E066DF4E4EF4A8C1557 /* Pods-SegmentLocalyticsDemoUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 59F4A26E15855C657C52377E2EE405DE /* Pods-SegmentLocalyticsDemoUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1841430F4BC49E03B9B9EEB085AE5D39 /* SEGSegmentIntegrationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 45C9267F012174D4A80217CFBCD36F6B /* SEGSegmentIntegrationFactory.m */; };
+		1A694AC7C67062C4561EDFA4C9A798AE /* SEGLocalyticsIntegrationFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F37A2778164A0F930A54A6FCAFD8741 /* SEGLocalyticsIntegrationFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BEF3D427DE8DBE6857FDF9C63BDF3D6 /* SEGIntegrationFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = ACE5BED1E0744B299D5CA843E91EA2A1 /* SEGIntegrationFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1CE668DD58FB6350A39DBB3F877986BD /* SEGSegmentIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5732FA6A3732566C9E8A5CF2799F1D /* SEGSegmentIntegration.m */; };
+		1F1AB1C229067D5C28AFAD1EADDB78FB /* AnalyticsSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 626A3B46B37D8B4F2A8E5F6137F2D325 /* AnalyticsSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27AAEEE544B848D5A02D0ED9A0A625BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B675B82D8A04223C9DD5CE4EE9D95E7A /* Foundation.framework */; };
+		2FEDE2CC943F71B810A39F71557395CF /* SEGReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A3B4B0489E8931C73BCE48A8AB3E151 /* SEGReachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		366224ED62939A732DF9C3F3EA8F3929 /* Pods-SegmentLocalyticsDemoTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F159BEAB4C061BE353A96D2408D27D9 /* Pods-SegmentLocalyticsDemoTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		387AE6347C7F2EFD2956C28066F682A5 /* SEGMiddleware.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AA25E0EDA03476E1A871D86B98CE528 /* SEGMiddleware.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3AFA71F54EF12A5715FF397A350337F5 /* Pods-SegmentLocalyticsDemoTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BADF4347CFD1722031DC58E49A5979EF /* Pods-SegmentLocalyticsDemoTests-dummy.m */; };
+		40360117F63A80DFAFDC4C8B732E7EE3 /* NSData+SEGGZIP.h in Headers */ = {isa = PBXBuildFile; fileRef = 64DBA4382419BCC80821CDAAF3C0F3CE /* NSData+SEGGZIP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42760845F765FEF1FE757EF196075FFD /* SEGUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = D2CAB8230DE9F4249706A6EDA717F9AE /* SEGUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45ED8AB3F29F60245C30DEE09AD0BBCA /* Segment-Localytics-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B448729D3F07C19EE2AC16FA69E3D83 /* Segment-Localytics-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		49C8B0ECFA050A9D5D24EBC35AE40281 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B675B82D8A04223C9DD5CE4EE9D95E7A /* Foundation.framework */; };
+		4A618A3180EEA6FAD0F5421CD0DF8B20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B675B82D8A04223C9DD5CE4EE9D95E7A /* Foundation.framework */; };
+		4B70A68308B642AC124170601B66C783 /* SEGStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 2518B9945F57690350C895FA56D66CCB /* SEGStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C5BB62E74B45F20BE431C503132229B /* SEGTrackPayload.h in Headers */ = {isa = PBXBuildFile; fileRef = F2746708159168D13BE1A2933A83D4BD /* SEGTrackPayload.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		57C4AD4132C28DE9A7B62B89E27DA353 /* Pods-SegmentLocalyticsDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF8A422CF690240AF1B17148A2EF9CD /* Pods-SegmentLocalyticsDemo-dummy.m */; };
+		58925FE48AE63C76B3F279A184F577E9 /* SEGAES256Crypto.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F9F359167A6804D470DB951BE03C214 /* SEGAES256Crypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5CA406B4E9CEB4D22169B915068AAD35 /* SEGContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4D99ADB2B29DC5062C434BFEE598AF /* SEGContext.m */; };
+		62C50D0ABDA436994489AE5EABD1393E /* SEGFileStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAC29DE3892BD15915DDD161600762B /* SEGFileStorage.m */; };
+		6671A852E1FEE4356E3F9814DAB55C16 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1349B094E6C63C4BA62338C1B2B4B9A4 /* Credentials.swift */; };
+		6BC6F301359A276CCA70640533CE2690 /* SEGFileStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = A77D9A1582439FC081133554D8C5D07D /* SEGFileStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CFBA3D0DD5FCE4660B93921152CDCE4 /* SEGGroupPayload.h in Headers */ = {isa = PBXBuildFile; fileRef = 53721B5C745DFE2FC67DBD901C2BDFC8 /* SEGGroupPayload.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6EEC2985028F55BB8D237BE9686D8C5A /* AliasMessageBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF74B68E60B477BD68C546B73D1B98B /* AliasMessageBuilder.swift */; };
+		774A7A3EB1A94E53CBFD905326BDCB64 /* SEGScreenPayload.h in Headers */ = {isa = PBXBuildFile; fileRef = 22A1609D407FC7B7E651707621D941B9 /* SEGScreenPayload.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78FB32E5AC45218FB83A8001A8E68808 /* NSData+SEGGZIP.m in Sources */ = {isa = PBXBuildFile; fileRef = B9384FE4BCA552EC7567180F5442F2B4 /* NSData+SEGGZIP.m */; };
+		7A3EE2643B6DB42887E11B49463CFA50 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A20680C5170D9CFA5DF3CB7304B6C3 /* Security.framework */; };
+		7BE4DC635D379A036E9853979A9BE61E /* SEGLocalyticsIntegrationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A43C0D8730026ECBB0EC5675C57476 /* SEGLocalyticsIntegrationFactory.m */; };
+		7D7CD63EF51C78CF900E3BB4E481CBC2 /* Analytics-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9299F74ECDF71D74CFC97E4A8F6C101C /* Analytics-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E5823E95ED0A21BA74F3A7A93006C72 /* SEGAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = 2511487901D212A66C55AD7A62356554 /* SEGAnalytics.m */; };
+		803112CD13B0CC1D661F8B07DB4BD22A /* SEGReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 56AE699187A3899CAA844CD37B649247 /* SEGReachability.m */; };
+		85E291E249B5A06363F2AFF0D67CB33B /* SEGSegmentIntegration.h in Headers */ = {isa = PBXBuildFile; fileRef = F95CABFB8C5A33502F211691F05D07D3 /* SEGSegmentIntegration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A737A3F76BBC5C04BB0B8B30CC07360 /* SEGIntegrationsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B2164FFAD38EF4CE18B73F7310F9EBCE /* SEGIntegrationsManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		908EA2C3B9EC1431AA003E41E181E3F5 /* SEGAnalyticsConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 6490E77D5308B56EFC0EBB29961818DE /* SEGAnalyticsConfiguration.m */; };
+		923CEEF5260C823D2B9D3AE5C36EBADD /* SEGLocalyticsIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E7358D0F689A9A8B7822CB6D2596B5E /* SEGLocalyticsIntegration.m */; };
+		94EF76B0F52F21FE53AE5BE1050C8D91 /* SEGAES256Crypto.m in Sources */ = {isa = PBXBuildFile; fileRef = CB99B02EA73EF8583BA8A95CD92B6A25 /* SEGAES256Crypto.m */; };
+		963AFB3D63443D00E4EACADDCD783726 /* ScreenMessageBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A30A55171420E9FC1221AB28C8F24A /* ScreenMessageBuilder.swift */; };
+		97DE611DDC4BFFC695C3D00A3F9C0496 /* IdentifyMessageBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609A645E50567321748A70E893C7921D /* IdentifyMessageBuilder.swift */; };
+		9C7BBDC18CFDAF7D85983FF4218BC87D /* Analytics-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9C6FA538D4276379E5B03405AF4EAE /* Analytics-dummy.m */; };
+		9D009C9F48A3DAEBF443AD19F6DB048E /* Analytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 278C3878B36F27512EDE4B67DBED369C /* Analytics.framework */; };
+		A2089EBFC7B28AFF45CC17C929CFE5D6 /* SEGIntegrationsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 705E846F2C09FE12D71CC6F77F31F4B3 /* SEGIntegrationsManager.m */; };
+		A357941EC3C0203D9A1DE3E112529998 /* SEGLocalyticsIntegration.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C4AC0FB15F5472694A3AE2F0C2D1D92 /* SEGLocalyticsIntegration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4940B73BC0AB35E3D7B6FE2CFFD5095 /* Executor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B00D69BD158D1AF0AFB0131EE217D1 /* Executor.swift */; };
+		A5038E8FF91BB5D3E3F1C6128CE903AB /* SEGMiddleware.m in Sources */ = {isa = PBXBuildFile; fileRef = E47F4B6CEFD6136A4E2DA05B345BB796 /* SEGMiddleware.m */; };
+		AC977C26275770D4C41D7B5B543CCFCE /* GroupMessageBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DCB8547814826FACBD3E1B24C30795 /* GroupMessageBuilder.swift */; };
+		AFF318F4A8F9250D612ED258BF519021 /* SEGUserDefaultsStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = BAABB6CE2DC6BE956FCE52809703AC85 /* SEGUserDefaultsStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4D3398A3200D0BC3A72CC8523F87AF2 /* SEGHTTPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 965EB0B5BBF9A1919B8CA3FD9D26DDFD /* SEGHTTPClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BBA96EBF9E524228BB44D12CA71EA6C5 /* UIViewController+SEGScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C99179A0E872526CE98C2BED591BFD4 /* UIViewController+SEGScreen.m */; };
+		BEF6F457EB6B82F6146FF40AEB17EADC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B675B82D8A04223C9DD5CE4EE9D95E7A /* Foundation.framework */; };
+		BF62BCAABA37505565D65D30416DA4B1 /* SEGIntegration.h in Headers */ = {isa = PBXBuildFile; fileRef = 51754B02C58D20037FDA6309A5FC48F0 /* SEGIntegration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C160D255864ED2572A2B3CC3A6526A3E /* SEGStoreKitTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFF19C35F13E7755B7918C2A16393EB /* SEGStoreKitTracker.m */; };
+		C3ECBE9107DA4A2C2D07D72BF4FCA2B9 /* SerialExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEEB560D8E2CA9377AC0F112BEEE816 /* SerialExecutor.swift */; };
+		C66AE33FB629528AAAA7937092854CAD /* AnalyticsSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 522557D8EB60923F00210CCA4082D9F3 /* AnalyticsSwift-dummy.m */; };
+		CC65368DDA77E8947FECA61F8D034D43 /* SEGScreenPayload.m in Sources */ = {isa = PBXBuildFile; fileRef = 6260F597116D52EF4EAD9107366ECC0D /* SEGScreenPayload.m */; };
+		D2927724D26109809E245E63804CEEFF /* SEGSegmentIntegrationFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = C080590F4DBA5E596EB948DD5E2EA5FF /* SEGSegmentIntegrationFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3E5DA1D81D27439E8F8B69F4B74CFA7 /* SEGContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 72149FB8C9A24D4C99ABCFAC1AA93469 /* SEGContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D5718EF59FF3535D151556FC06235296 /* SEGHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F520C36FA305F410BDBEE528015163B /* SEGHTTPClient.m */; };
+		D809C7071CD2FF4C3F9284798F6B6812 /* SEGCrypto.h in Headers */ = {isa = PBXBuildFile; fileRef = CFFCAF1D5F78270C5DBA6EECDDD18087 /* SEGCrypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D8B9B61F8435FC380E7B6F5C0BABAA76 /* Pods-SegmentLocalyticsDemoUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F961691BBE2AED24D7C410B3A036EF /* Pods-SegmentLocalyticsDemoUITests-dummy.m */; };
+		E18341A0210C32B8EB64E284FE4C3756 /* SEGIdentifyPayload.m in Sources */ = {isa = PBXBuildFile; fileRef = D57141A73F6982EE324F7965FA45BE0C /* SEGIdentifyPayload.m */; };
+		E3817A695ABE7F1FC8F8F9C118F98C98 /* SEGAnalyticsConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 8204587CD5966F74CBAFCC2B0BF8FC6C /* SEGAnalyticsConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3BD19C81832810100BCD9E2973FD31F /* Pods-SegmentLocalyticsDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 56B4B479AD0D41D70C4D657506E9C5DE /* Pods-SegmentLocalyticsDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E57869B210DBE54A80F57E7F9D9B4B7F /* SEGAnalyticsUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 088A7C6E277AEDEE0302A36968AFF620 /* SEGAnalyticsUtils.m */; };
+		EACB599426DF9D738B51C43708CE9448 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B675B82D8A04223C9DD5CE4EE9D95E7A /* Foundation.framework */; };
+		EC2CA82CA2BAC6DEC85EB128692C542B /* SEGPayload.h in Headers */ = {isa = PBXBuildFile; fileRef = 10926403608C6913F58BD5C5B03E9246 /* SEGPayload.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE0A873F71115EC79394B14B05513D33 /* SEGUserDefaultsStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA4CB51F1ACA0FA9CC333665451643A /* SEGUserDefaultsStorage.m */; };
+		EE0F80901C88E2459A26A10AE30A4153 /* SEGAnalytics.h in Headers */ = {isa = PBXBuildFile; fileRef = 69ACBFAA0CA8BC182F09636D31CDF779 /* SEGAnalytics.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE7501F14EB40A3CB38CBB4E8CDEA4E3 /* SEGTrackPayload.m in Sources */ = {isa = PBXBuildFile; fileRef = 011681588D2A05ED00FB0A8648FAB51B /* SEGTrackPayload.m */; };
+		F288939258F23E44922F2CF6B1BF0004 /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4E3D167286A47AE5F86F3CE2958D26 /* Analytics.swift */; };
+		F2DFD900CE7629EAA35A0171AD98FD00 /* UIViewController+SEGScreen.h in Headers */ = {isa = PBXBuildFile; fileRef = 967CDF97C3FCE91963CBC19A30751FE1 /* UIViewController+SEGScreen.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8E54BDA1F4A16E7B40126F3DA8C9DA9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B675B82D8A04223C9DD5CE4EE9D95E7A /* Foundation.framework */; };
+		FAF1ACEFAB9B56DCF0434FA723A03D60 /* SEGGroupPayload.m in Sources */ = {isa = PBXBuildFile; fileRef = E43A548257418E610239CECDA3C62E18 /* SEGGroupPayload.m */; };
+		FEC0DE602460F59BBB6C3A4A57015362 /* SEGPayload.m in Sources */ = {isa = PBXBuildFile; fileRef = 89452605EBAC26D59423194DE4EA8722 /* SEGPayload.m */; };
+		FEC90AAD12181BF71A61E09AB02F4E2D /* Segment-Localytics-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD372AD5026D6148612DA67BB6FCC439 /* Segment-Localytics-dummy.m */; };
+		FF7350E17CE29DD51E04453295841DCB /* TrackMessageBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A172206E3CE5A226B928F91DCD3C04 /* TrackMessageBuilder.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04D5BF4822A986F15F8CB6909EC1295C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9203C09D29D001DDFEC44EE7C7FDD312;
+			remoteInfo = "Segment-Localytics";
+		};
+		482EAD914C66B410CFDCADF4E4092928 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE1DD9B213B2436139A27922A687BBC4;
+			remoteInfo = Analytics;
+		};
+		6FA1AD167121A26D5EAD7CA599B71396 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECEE627A78823A29ADD352ADCD154B40;
+			remoteInfo = AnalyticsSwift;
+		};
+		93F6EA068FB59540E2083A36AAFA4BBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE1DD9B213B2436139A27922A687BBC4;
+			remoteInfo = Analytics;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		006C0AE7806DBFDDF4D1CA8BBC6C2374 /* Analytics.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Analytics.modulemap; sourceTree = "<group>"; };
+		011681588D2A05ED00FB0A8648FAB51B /* SEGTrackPayload.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGTrackPayload.m; path = Analytics/Classes/Integrations/SEGTrackPayload.m; sourceTree = "<group>"; };
+		01A30A55171420E9FC1221AB28C8F24A /* ScreenMessageBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScreenMessageBuilder.swift; path = AnalyticsSwift/ScreenMessageBuilder.swift; sourceTree = "<group>"; };
+		01E3BA24A2A62422EB391010F92EDFF1 /* SEGStoreKitTracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGStoreKitTracker.h; path = Analytics/Classes/Internal/SEGStoreKitTracker.h; sourceTree = "<group>"; };
+		0277846EA9B8C0DFBBCEFC01236DB1C0 /* Pods-SegmentLocalyticsDemoTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SegmentLocalyticsDemoTests.modulemap"; sourceTree = "<group>"; };
+		042EB09852ED86A23A69995F7B48A439 /* SEGIdentifyPayload.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGIdentifyPayload.h; path = Analytics/Classes/Integrations/SEGIdentifyPayload.h; sourceTree = "<group>"; };
+		088A7C6E277AEDEE0302A36968AFF620 /* SEGAnalyticsUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGAnalyticsUtils.m; path = Analytics/Classes/Internal/SEGAnalyticsUtils.m; sourceTree = "<group>"; };
+		0A055249569A6221E292FB660F108CA0 /* Pods-SegmentLocalyticsDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SegmentLocalyticsDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0BF79945B0466BC7937417CEEB29FFC0 /* Pods-SegmentLocalyticsDemoUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SegmentLocalyticsDemoUITests-resources.sh"; sourceTree = "<group>"; };
+		0EF8A422CF690240AF1B17148A2EF9CD /* Pods-SegmentLocalyticsDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SegmentLocalyticsDemo-dummy.m"; sourceTree = "<group>"; };
+		10926403608C6913F58BD5C5B03E9246 /* SEGPayload.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGPayload.h; path = Analytics/Classes/Integrations/SEGPayload.h; sourceTree = "<group>"; };
+		1349B094E6C63C4BA62338C1B2B4B9A4 /* Credentials.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Credentials.swift; path = AnalyticsSwift/Credentials.swift; sourceTree = "<group>"; };
+		18A20680C5170D9CFA5DF3CB7304B6C3 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		1961C245464E0FDD2AEBF3E90F0E5C81 /* AnalyticsSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AnalyticsSwift.framework; path = AnalyticsSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A4D99ADB2B29DC5062C434BFEE598AF /* SEGContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGContext.m; path = Analytics/Classes/Middlewares/SEGContext.m; sourceTree = "<group>"; };
+		1B448729D3F07C19EE2AC16FA69E3D83 /* Segment-Localytics-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Segment-Localytics-umbrella.h"; sourceTree = "<group>"; };
+		1C99179A0E872526CE98C2BED591BFD4 /* UIViewController+SEGScreen.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+SEGScreen.m"; path = "Analytics/Classes/Internal/UIViewController+SEGScreen.m"; sourceTree = "<group>"; };
+		1E7358D0F689A9A8B7822CB6D2596B5E /* SEGLocalyticsIntegration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGLocalyticsIntegration.m; path = Pod/Classes/SEGLocalyticsIntegration.m; sourceTree = "<group>"; };
+		1F37A2778164A0F930A54A6FCAFD8741 /* SEGLocalyticsIntegrationFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGLocalyticsIntegrationFactory.h; path = Pod/Classes/SEGLocalyticsIntegrationFactory.h; sourceTree = "<group>"; };
+		1FE7D7784566597C792E7535F7FC14D9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20C601E1371FA44AADC64FD2192CDE97 /* Pods-SegmentLocalyticsDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SegmentLocalyticsDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		21A43C0D8730026ECBB0EC5675C57476 /* SEGLocalyticsIntegrationFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGLocalyticsIntegrationFactory.m; path = Pod/Classes/SEGLocalyticsIntegrationFactory.m; sourceTree = "<group>"; };
+		22A1609D407FC7B7E651707621D941B9 /* SEGScreenPayload.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGScreenPayload.h; path = Analytics/Classes/Integrations/SEGScreenPayload.h; sourceTree = "<group>"; };
+		2511487901D212A66C55AD7A62356554 /* SEGAnalytics.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGAnalytics.m; path = Analytics/Classes/SEGAnalytics.m; sourceTree = "<group>"; };
+		2518B9945F57690350C895FA56D66CCB /* SEGStorage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGStorage.h; path = Analytics/Classes/Internal/SEGStorage.h; sourceTree = "<group>"; };
+		278C3878B36F27512EDE4B67DBED369C /* Analytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Analytics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B288851A9D8469F94A91A6C613ADC08 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D9C6FA538D4276379E5B03405AF4EAE /* Analytics-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Analytics-dummy.m"; sourceTree = "<group>"; };
+		2F159BEAB4C061BE353A96D2408D27D9 /* Pods-SegmentLocalyticsDemoTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SegmentLocalyticsDemoTests-umbrella.h"; sourceTree = "<group>"; };
+		2F520C36FA305F410BDBEE528015163B /* SEGHTTPClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGHTTPClient.m; path = Analytics/Classes/Internal/SEGHTTPClient.m; sourceTree = "<group>"; };
+		31356084C2A4AE8FE5654F4489C56DCB /* SEGAliasPayload.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGAliasPayload.m; path = Analytics/Classes/Integrations/SEGAliasPayload.m; sourceTree = "<group>"; };
+		38DEA0E713B9AB27B4CE14F42FCD4491 /* Pods-SegmentLocalyticsDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SegmentLocalyticsDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3AA25E0EDA03476E1A871D86B98CE528 /* SEGMiddleware.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGMiddleware.h; path = Analytics/Classes/Middlewares/SEGMiddleware.h; sourceTree = "<group>"; };
+		3B0D5D246A5B372B52F75C03BC9F3976 /* Pods_SegmentLocalyticsDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SegmentLocalyticsDemo.framework; path = "Pods-SegmentLocalyticsDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EF1B4C6F407EA30F7074BB6EFBACF7A /* Pods-SegmentLocalyticsDemoUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SegmentLocalyticsDemoUITests-frameworks.sh"; sourceTree = "<group>"; };
+		45C9267F012174D4A80217CFBCD36F6B /* SEGSegmentIntegrationFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGSegmentIntegrationFactory.m; path = Analytics/Classes/Internal/SEGSegmentIntegrationFactory.m; sourceTree = "<group>"; };
+		47B1E06C8780A2B83F5EF31D27C6AFA0 /* Pods-SegmentLocalyticsDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SegmentLocalyticsDemo.modulemap"; sourceTree = "<group>"; };
+		4A3B4B0489E8931C73BCE48A8AB3E151 /* SEGReachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGReachability.h; path = Analytics/Vendor/SEGReachability.h; sourceTree = "<group>"; };
+		4BEEB560D8E2CA9377AC0F112BEEE816 /* SerialExecutor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SerialExecutor.swift; path = AnalyticsSwift/SerialExecutor.swift; sourceTree = "<group>"; };
+		4EBE6B83AA04603FC445F221E87D9856 /* Segment-Localytics.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Segment-Localytics.modulemap"; sourceTree = "<group>"; };
+		4FF837DE2E8D60100D03FE043FB22255 /* Pods-SegmentLocalyticsDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SegmentLocalyticsDemo-frameworks.sh"; sourceTree = "<group>"; };
+		51754B02C58D20037FDA6309A5FC48F0 /* SEGIntegration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGIntegration.h; path = Analytics/Classes/Integrations/SEGIntegration.h; sourceTree = "<group>"; };
+		522557D8EB60923F00210CCA4082D9F3 /* AnalyticsSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AnalyticsSwift-dummy.m"; sourceTree = "<group>"; };
+		53721B5C745DFE2FC67DBD901C2BDFC8 /* SEGGroupPayload.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGGroupPayload.h; path = Analytics/Classes/Integrations/SEGGroupPayload.h; sourceTree = "<group>"; };
+		56AE699187A3899CAA844CD37B649247 /* SEGReachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGReachability.m; path = Analytics/Vendor/SEGReachability.m; sourceTree = "<group>"; };
+		56B4B479AD0D41D70C4D657506E9C5DE /* Pods-SegmentLocalyticsDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SegmentLocalyticsDemo-umbrella.h"; sourceTree = "<group>"; };
+		572BA70472778801704053EEBD47CD03 /* Analytics-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Analytics-prefix.pch"; sourceTree = "<group>"; };
+		57E578989B3784EACBD18B89679C7A2A /* Analytics.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Analytics.xcconfig; sourceTree = "<group>"; };
+		59F4A26E15855C657C52377E2EE405DE /* Pods-SegmentLocalyticsDemoUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SegmentLocalyticsDemoUITests-umbrella.h"; sourceTree = "<group>"; };
+		609A645E50567321748A70E893C7921D /* IdentifyMessageBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IdentifyMessageBuilder.swift; path = AnalyticsSwift/IdentifyMessageBuilder.swift; sourceTree = "<group>"; };
+		6260F597116D52EF4EAD9107366ECC0D /* SEGScreenPayload.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGScreenPayload.m; path = Analytics/Classes/Integrations/SEGScreenPayload.m; sourceTree = "<group>"; };
+		626A3B46B37D8B4F2A8E5F6137F2D325 /* AnalyticsSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AnalyticsSwift-umbrella.h"; sourceTree = "<group>"; };
+		62F686400F3E29B1C4DA773F3627D364 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6490E77D5308B56EFC0EBB29961818DE /* SEGAnalyticsConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGAnalyticsConfiguration.m; path = Analytics/Classes/SEGAnalyticsConfiguration.m; sourceTree = "<group>"; };
+		64DBA4382419BCC80821CDAAF3C0F3CE /* NSData+SEGGZIP.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+SEGGZIP.h"; path = "Analytics/Classes/Internal/NSData+SEGGZIP.h"; sourceTree = "<group>"; };
+		69ACBFAA0CA8BC182F09636D31CDF779 /* SEGAnalytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGAnalytics.h; path = Analytics/Classes/SEGAnalytics.h; sourceTree = "<group>"; };
+		6BAC29DE3892BD15915DDD161600762B /* SEGFileStorage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGFileStorage.m; path = Analytics/Classes/Internal/SEGFileStorage.m; sourceTree = "<group>"; };
+		6F3E886064B7C1F9446FD484F2C010AE /* Pods-SegmentLocalyticsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SegmentLocalyticsDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		6FA4CB51F1ACA0FA9CC333665451643A /* SEGUserDefaultsStorage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGUserDefaultsStorage.m; path = Analytics/Classes/Internal/SEGUserDefaultsStorage.m; sourceTree = "<group>"; };
+		6FF74B68E60B477BD68C546B73D1B98B /* AliasMessageBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AliasMessageBuilder.swift; path = AnalyticsSwift/AliasMessageBuilder.swift; sourceTree = "<group>"; };
+		705E846F2C09FE12D71CC6F77F31F4B3 /* SEGIntegrationsManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGIntegrationsManager.m; path = Analytics/Classes/Integrations/SEGIntegrationsManager.m; sourceTree = "<group>"; };
+		72149FB8C9A24D4C99ABCFAC1AA93469 /* SEGContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGContext.h; path = Analytics/Classes/Middlewares/SEGContext.h; sourceTree = "<group>"; };
+		75DCB8547814826FACBD3E1B24C30795 /* GroupMessageBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GroupMessageBuilder.swift; path = AnalyticsSwift/GroupMessageBuilder.swift; sourceTree = "<group>"; };
+		761BCB7EDDB9D85915B64348861AC4B3 /* Pods-SegmentLocalyticsDemoTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SegmentLocalyticsDemoTests-resources.sh"; sourceTree = "<group>"; };
+		7A41D9037C5D6F23A3116F6D5B19BD29 /* Pods-SegmentLocalyticsDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SegmentLocalyticsDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7C150CE371C963C22FF4CAB4CBB6ACB8 /* Pods-SegmentLocalyticsDemoTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SegmentLocalyticsDemoTests-frameworks.sh"; sourceTree = "<group>"; };
+		7C3F694B8E42C416A09FF72295D76C1B /* Pods-SegmentLocalyticsDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SegmentLocalyticsDemo-resources.sh"; sourceTree = "<group>"; };
+		7DF456ACBC1C5E6F9A0BAF14EFFA142D /* Pods-SegmentLocalyticsDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SegmentLocalyticsDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		8204587CD5966F74CBAFCC2B0BF8FC6C /* SEGAnalyticsConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGAnalyticsConfiguration.h; path = Analytics/Classes/SEGAnalyticsConfiguration.h; sourceTree = "<group>"; };
+		834CD083F6B321C6D3413BF659BD599A /* Pods-SegmentLocalyticsDemoUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SegmentLocalyticsDemoUITests.modulemap"; sourceTree = "<group>"; };
+		84A7C229BB9EC609B16A3CC56F5C6DB2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87B00D69BD158D1AF0AFB0131EE217D1 /* Executor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Executor.swift; path = AnalyticsSwift/Executor.swift; sourceTree = "<group>"; };
+		89452605EBAC26D59423194DE4EA8722 /* SEGPayload.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGPayload.m; path = Analytics/Classes/Integrations/SEGPayload.m; sourceTree = "<group>"; };
+		8BFF19C35F13E7755B7918C2A16393EB /* SEGStoreKitTracker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGStoreKitTracker.m; path = Analytics/Classes/Internal/SEGStoreKitTracker.m; sourceTree = "<group>"; };
+		8D0D4CD7DC2A93ADC21430F5BCEE60AC /* Pods-SegmentLocalyticsDemoUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SegmentLocalyticsDemoUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8D9B67AD384969938D81516881FEE4C5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F9F359167A6804D470DB951BE03C214 /* SEGAES256Crypto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGAES256Crypto.h; path = Analytics/Classes/Crypto/SEGAES256Crypto.h; sourceTree = "<group>"; };
+		9299F74ECDF71D74CFC97E4A8F6C101C /* Analytics-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Analytics-umbrella.h"; sourceTree = "<group>"; };
+		92DFFB3D446644ED768CCFB8C27EE5BB /* AnalyticsSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AnalyticsSwift.xcconfig; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		965EB0B5BBF9A1919B8CA3FD9D26DDFD /* SEGHTTPClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGHTTPClient.h; path = Analytics/Classes/Internal/SEGHTTPClient.h; sourceTree = "<group>"; };
+		967CDF97C3FCE91963CBC19A30751FE1 /* UIViewController+SEGScreen.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+SEGScreen.h"; path = "Analytics/Classes/Internal/UIViewController+SEGScreen.h"; sourceTree = "<group>"; };
+		9827ED5CDE35E7915E006E67225DAC40 /* Pods_SegmentLocalyticsDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SegmentLocalyticsDemoTests.framework; path = "Pods-SegmentLocalyticsDemoTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A9AA00E74B47A084AA5DB4C023781BC /* Localytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Localytics.framework; path = "Localytics-iOS-4.4.1/Localytics.framework"; sourceTree = "<group>"; };
+		9BE9F715889553B3E5D284A13BDD6CC7 /* Pods-SegmentLocalyticsDemoUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SegmentLocalyticsDemoUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9C4AC0FB15F5472694A3AE2F0C2D1D92 /* SEGLocalyticsIntegration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGLocalyticsIntegration.h; path = Pod/Classes/SEGLocalyticsIntegration.h; sourceTree = "<group>"; };
+		A77D9A1582439FC081133554D8C5D07D /* SEGFileStorage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGFileStorage.h; path = Analytics/Classes/Internal/SEGFileStorage.h; sourceTree = "<group>"; };
+		A8A172206E3CE5A226B928F91DCD3C04 /* TrackMessageBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TrackMessageBuilder.swift; path = AnalyticsSwift/TrackMessageBuilder.swift; sourceTree = "<group>"; };
+		AA2F0EAF8603C19017AFE328DCB174A5 /* AnalyticsSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AnalyticsSwift-prefix.pch"; sourceTree = "<group>"; };
+		ACE5BED1E0744B299D5CA843E91EA2A1 /* SEGIntegrationFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGIntegrationFactory.h; path = Analytics/Classes/Integrations/SEGIntegrationFactory.h; sourceTree = "<group>"; };
+		AD372AD5026D6148612DA67BB6FCC439 /* Segment-Localytics-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Segment-Localytics-dummy.m"; sourceTree = "<group>"; };
+		B2164FFAD38EF4CE18B73F7310F9EBCE /* SEGIntegrationsManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGIntegrationsManager.h; path = Analytics/Classes/Integrations/SEGIntegrationsManager.h; sourceTree = "<group>"; };
+		B61C26778201D2AA5529A6900C1060BF /* SEGSerializableValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGSerializableValue.h; path = Analytics/Classes/SEGSerializableValue.h; sourceTree = "<group>"; };
+		B675B82D8A04223C9DD5CE4EE9D95E7A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		B9384FE4BCA552EC7567180F5442F2B4 /* NSData+SEGGZIP.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+SEGGZIP.m"; path = "Analytics/Classes/Internal/NSData+SEGGZIP.m"; sourceTree = "<group>"; };
+		BAABB6CE2DC6BE956FCE52809703AC85 /* SEGUserDefaultsStorage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGUserDefaultsStorage.h; path = Analytics/Classes/Internal/SEGUserDefaultsStorage.h; sourceTree = "<group>"; };
+		BADF4347CFD1722031DC58E49A5979EF /* Pods-SegmentLocalyticsDemoTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SegmentLocalyticsDemoTests-dummy.m"; sourceTree = "<group>"; };
+		BBC0C87E00432191E1DEC30DDFFB4A8A /* Pods-SegmentLocalyticsDemoTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SegmentLocalyticsDemoTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BBE59845DF6A03BBAD90144576E774C0 /* SEGUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGUtils.m; path = Analytics/Classes/Internal/SEGUtils.m; sourceTree = "<group>"; };
+		C080590F4DBA5E596EB948DD5E2EA5FF /* SEGSegmentIntegrationFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGSegmentIntegrationFactory.h; path = Analytics/Classes/Internal/SEGSegmentIntegrationFactory.h; sourceTree = "<group>"; };
+		C7D759F6A4D199E1FCA2A26197D0E373 /* MessageBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageBuilder.swift; path = AnalyticsSwift/MessageBuilder.swift; sourceTree = "<group>"; };
+		CB99B02EA73EF8583BA8A95CD92B6A25 /* SEGAES256Crypto.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGAES256Crypto.m; path = Analytics/Classes/Crypto/SEGAES256Crypto.m; sourceTree = "<group>"; };
+		CFFCAF1D5F78270C5DBA6EECDDD18087 /* SEGCrypto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGCrypto.h; path = Analytics/Classes/Crypto/SEGCrypto.h; sourceTree = "<group>"; };
+		D01430EDEFE64A084A001B8D6BA6402E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D01E10F79FA5065C3C7BF87D1930D779 /* Analytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Analytics.framework; path = Analytics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0767F4E13F5E2E6DA1A4AF16A7AEB96 /* AnalyticsSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AnalyticsSwift.modulemap; sourceTree = "<group>"; };
+		D2CAB8230DE9F4249706A6EDA717F9AE /* SEGUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGUtils.h; path = Analytics/Classes/Internal/SEGUtils.h; sourceTree = "<group>"; };
+		D4E08051457BD11DAA863807F57D6248 /* Segment-Localytics-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Segment-Localytics-prefix.pch"; sourceTree = "<group>"; };
+		D57141A73F6982EE324F7965FA45BE0C /* SEGIdentifyPayload.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGIdentifyPayload.m; path = Analytics/Classes/Integrations/SEGIdentifyPayload.m; sourceTree = "<group>"; };
+		DF4E3D167286A47AE5F86F3CE2958D26 /* Analytics.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Analytics.swift; path = AnalyticsSwift/Analytics.swift; sourceTree = "<group>"; };
+		E25846A3BD6F2307049D6E5605C0833A /* Pods-SegmentLocalyticsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SegmentLocalyticsDemo.release.xcconfig"; sourceTree = "<group>"; };
+		E4056589A69F932832F0CD8A028DB406 /* SEGAliasPayload.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGAliasPayload.h; path = Analytics/Classes/Integrations/SEGAliasPayload.h; sourceTree = "<group>"; };
+		E43A548257418E610239CECDA3C62E18 /* SEGGroupPayload.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGGroupPayload.m; path = Analytics/Classes/Integrations/SEGGroupPayload.m; sourceTree = "<group>"; };
+		E47F4B6CEFD6136A4E2DA05B345BB796 /* SEGMiddleware.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGMiddleware.m; path = Analytics/Classes/Middlewares/SEGMiddleware.m; sourceTree = "<group>"; };
+		E4F961691BBE2AED24D7C410B3A036EF /* Pods-SegmentLocalyticsDemoUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SegmentLocalyticsDemoUITests-dummy.m"; sourceTree = "<group>"; };
+		EB60442066A034A4E9C347DCA5638E16 /* Segment_Localytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Segment_Localytics.framework; path = "Segment-Localytics.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2746708159168D13BE1A2933A83D4BD /* SEGTrackPayload.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGTrackPayload.h; path = Analytics/Classes/Integrations/SEGTrackPayload.h; sourceTree = "<group>"; };
+		F2EBFF718C3FEBF8EAD695A9BEF408C8 /* Pods_SegmentLocalyticsDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SegmentLocalyticsDemoUITests.framework; path = "Pods-SegmentLocalyticsDemoUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F31089ED7A58F14B4F9A1E966C83D46B /* Pods-SegmentLocalyticsDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SegmentLocalyticsDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F5861935925178A105602F8719042970 /* Segment-Localytics.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Segment-Localytics.xcconfig"; sourceTree = "<group>"; };
+		F78014622108E2D04BE80236CDA1A834 /* SEGAnalyticsUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGAnalyticsUtils.h; path = Analytics/Classes/Internal/SEGAnalyticsUtils.h; sourceTree = "<group>"; };
+		F95CABFB8C5A33502F211691F05D07D3 /* SEGSegmentIntegration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGSegmentIntegration.h; path = Analytics/Classes/Internal/SEGSegmentIntegration.h; sourceTree = "<group>"; };
+		FAF4675AD0DBFE32919057C02F4844B8 /* Pods-SegmentLocalyticsDemoTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SegmentLocalyticsDemoTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		FB5732FA6A3732566C9E8A5CF2799F1D /* SEGSegmentIntegration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGSegmentIntegration.m; path = Analytics/Classes/Internal/SEGSegmentIntegration.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13604880E01D5F23DB5A5F6350293471 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EACB599426DF9D738B51C43708CE9448 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		171F50C1845EF773AEFBDB3707B3CF83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A618A3180EEA6FAD0F5421CD0DF8B20 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2486C607530A9B3C3E3B3CA67931C00A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D009C9F48A3DAEBF443AD19F6DB048E /* Analytics.framework in Frameworks */,
+				F8E54BDA1F4A16E7B40126F3DA8C9DA9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87D0757F72D0CF1DA354DE6D1EADBE11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEF6F457EB6B82F6146FF40AEB17EADC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B890DCAD4667C8E067878F22887CD68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49C8B0ECFA050A9D5D24EBC35AE40281 /* Foundation.framework in Frameworks */,
+				7A3EE2643B6DB42887E11B49463CFA50 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4EC9DC246B9E862C8B2BE0FE49FB2B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27AAEEE544B848D5A02D0ED9A0A625BA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F687E94E79A7B31DA7BC61810051FEC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A9AA00E74B47A084AA5DB4C023781BC /* Localytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1AB8A7F8E493F70BCA21F12E5CBD7F9B /* Pods-SegmentLocalyticsDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D01430EDEFE64A084A001B8D6BA6402E /* Info.plist */,
+				47B1E06C8780A2B83F5EF31D27C6AFA0 /* Pods-SegmentLocalyticsDemo.modulemap */,
+				7A41D9037C5D6F23A3116F6D5B19BD29 /* Pods-SegmentLocalyticsDemo-acknowledgements.markdown */,
+				7DF456ACBC1C5E6F9A0BAF14EFFA142D /* Pods-SegmentLocalyticsDemo-acknowledgements.plist */,
+				0EF8A422CF690240AF1B17148A2EF9CD /* Pods-SegmentLocalyticsDemo-dummy.m */,
+				4FF837DE2E8D60100D03FE043FB22255 /* Pods-SegmentLocalyticsDemo-frameworks.sh */,
+				7C3F694B8E42C416A09FF72295D76C1B /* Pods-SegmentLocalyticsDemo-resources.sh */,
+				56B4B479AD0D41D70C4D657506E9C5DE /* Pods-SegmentLocalyticsDemo-umbrella.h */,
+				6F3E886064B7C1F9446FD484F2C010AE /* Pods-SegmentLocalyticsDemo.debug.xcconfig */,
+				E25846A3BD6F2307049D6E5605C0833A /* Pods-SegmentLocalyticsDemo.release.xcconfig */,
+			);
+			name = "Pods-SegmentLocalyticsDemo";
+			path = "Target Support Files/Pods-SegmentLocalyticsDemo";
+			sourceTree = "<group>";
+		};
+		230471ECACB8EEB5F25CAE5D9D300D40 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D01E10F79FA5065C3C7BF87D1930D779 /* Analytics.framework */,
+				1961C245464E0FDD2AEBF3E90F0E5C81 /* AnalyticsSwift.framework */,
+				3B0D5D246A5B372B52F75C03BC9F3976 /* Pods_SegmentLocalyticsDemo.framework */,
+				9827ED5CDE35E7915E006E67225DAC40 /* Pods_SegmentLocalyticsDemoTests.framework */,
+				F2EBFF718C3FEBF8EAD695A9BEF408C8 /* Pods_SegmentLocalyticsDemoUITests.framework */,
+				EB60442066A034A4E9C347DCA5638E16 /* Segment_Localytics.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2FD7F08ED6BB8B461934E8B85867A088 /* Localytics */ = {
+			isa = PBXGroup;
+			children = (
+				0F687E94E79A7B31DA7BC61810051FEC /* Frameworks */,
+			);
+			name = Localytics;
+			path = Localytics;
+			sourceTree = "<group>";
+		};
+		594BEAC382C099170A8B815DE68A8E25 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				006C0AE7806DBFDDF4D1CA8BBC6C2374 /* Analytics.modulemap */,
+				57E578989B3784EACBD18B89679C7A2A /* Analytics.xcconfig */,
+				2D9C6FA538D4276379E5B03405AF4EAE /* Analytics-dummy.m */,
+				572BA70472778801704053EEBD47CD03 /* Analytics-prefix.pch */,
+				9299F74ECDF71D74CFC97E4A8F6C101C /* Analytics-umbrella.h */,
+				84A7C229BB9EC609B16A3CC56F5C6DB2 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Analytics";
+			sourceTree = "<group>";
+		};
+		5C7013AAB5812CBD182320264A46DC58 /* Pods-SegmentLocalyticsDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2B288851A9D8469F94A91A6C613ADC08 /* Info.plist */,
+				834CD083F6B321C6D3413BF659BD599A /* Pods-SegmentLocalyticsDemoUITests.modulemap */,
+				8D0D4CD7DC2A93ADC21430F5BCEE60AC /* Pods-SegmentLocalyticsDemoUITests-acknowledgements.markdown */,
+				9BE9F715889553B3E5D284A13BDD6CC7 /* Pods-SegmentLocalyticsDemoUITests-acknowledgements.plist */,
+				E4F961691BBE2AED24D7C410B3A036EF /* Pods-SegmentLocalyticsDemoUITests-dummy.m */,
+				3EF1B4C6F407EA30F7074BB6EFBACF7A /* Pods-SegmentLocalyticsDemoUITests-frameworks.sh */,
+				0BF79945B0466BC7937417CEEB29FFC0 /* Pods-SegmentLocalyticsDemoUITests-resources.sh */,
+				59F4A26E15855C657C52377E2EE405DE /* Pods-SegmentLocalyticsDemoUITests-umbrella.h */,
+				38DEA0E713B9AB27B4CE14F42FCD4491 /* Pods-SegmentLocalyticsDemoUITests.debug.xcconfig */,
+				F31089ED7A58F14B4F9A1E966C83D46B /* Pods-SegmentLocalyticsDemoUITests.release.xcconfig */,
+			);
+			name = "Pods-SegmentLocalyticsDemoUITests";
+			path = "Target Support Files/Pods-SegmentLocalyticsDemoUITests";
+			sourceTree = "<group>";
+		};
+		6BAE5DD714140E814467A171CC5C8B6B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D0767F4E13F5E2E6DA1A4AF16A7AEB96 /* AnalyticsSwift.modulemap */,
+				92DFFB3D446644ED768CCFB8C27EE5BB /* AnalyticsSwift.xcconfig */,
+				522557D8EB60923F00210CCA4082D9F3 /* AnalyticsSwift-dummy.m */,
+				AA2F0EAF8603C19017AFE328DCB174A5 /* AnalyticsSwift-prefix.pch */,
+				626A3B46B37D8B4F2A8E5F6137F2D325 /* AnalyticsSwift-umbrella.h */,
+				1FE7D7784566597C792E7535F7FC14D9 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AnalyticsSwift";
+			sourceTree = "<group>";
+		};
+		70AF7EDE7CD9EF68B7C2BC240011B88C /* AnalyticsSwift */ = {
+			isa = PBXGroup;
+			children = (
+				6FF74B68E60B477BD68C546B73D1B98B /* AliasMessageBuilder.swift */,
+				DF4E3D167286A47AE5F86F3CE2958D26 /* Analytics.swift */,
+				1349B094E6C63C4BA62338C1B2B4B9A4 /* Credentials.swift */,
+				87B00D69BD158D1AF0AFB0131EE217D1 /* Executor.swift */,
+				75DCB8547814826FACBD3E1B24C30795 /* GroupMessageBuilder.swift */,
+				609A645E50567321748A70E893C7921D /* IdentifyMessageBuilder.swift */,
+				C7D759F6A4D199E1FCA2A26197D0E373 /* MessageBuilder.swift */,
+				01A30A55171420E9FC1221AB28C8F24A /* ScreenMessageBuilder.swift */,
+				4BEEB560D8E2CA9377AC0F112BEEE816 /* SerialExecutor.swift */,
+				A8A172206E3CE5A226B928F91DCD3C04 /* TrackMessageBuilder.swift */,
+				6BAE5DD714140E814467A171CC5C8B6B /* Support Files */,
+			);
+			name = AnalyticsSwift;
+			path = AnalyticsSwift;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				A36ABECC3401AA156E2FA8EA34228EC7 /* Frameworks */,
+				ED4A2ED8EF1A323995AF4EE2F7AE0947 /* Pods */,
+				230471ECACB8EEB5F25CAE5D9D300D40 /* Products */,
+				F89A0D452C319193FBDEE6E8F4ABDEF0 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		91AE0685F98787767BBC7650A30DE7ED /* Segment-Localytics */ = {
+			isa = PBXGroup;
+			children = (
+				9C4AC0FB15F5472694A3AE2F0C2D1D92 /* SEGLocalyticsIntegration.h */,
+				1E7358D0F689A9A8B7822CB6D2596B5E /* SEGLocalyticsIntegration.m */,
+				1F37A2778164A0F930A54A6FCAFD8741 /* SEGLocalyticsIntegrationFactory.h */,
+				21A43C0D8730026ECBB0EC5675C57476 /* SEGLocalyticsIntegrationFactory.m */,
+				FADE261741CFFFF880B0FB9857476888 /* Support Files */,
+			);
+			name = "Segment-Localytics";
+			path = "Segment-Localytics";
+			sourceTree = "<group>";
+		};
+		A36ABECC3401AA156E2FA8EA34228EC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				278C3878B36F27512EDE4B67DBED369C /* Analytics.framework */,
+				F5A81BD7B6D5AC25B0C2BBD74E53865B /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE7217099B2B8DB3BDC0FBB8FB8FBC35 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				64DBA4382419BCC80821CDAAF3C0F3CE /* NSData+SEGGZIP.h */,
+				B9384FE4BCA552EC7567180F5442F2B4 /* NSData+SEGGZIP.m */,
+				8F9F359167A6804D470DB951BE03C214 /* SEGAES256Crypto.h */,
+				CB99B02EA73EF8583BA8A95CD92B6A25 /* SEGAES256Crypto.m */,
+				E4056589A69F932832F0CD8A028DB406 /* SEGAliasPayload.h */,
+				31356084C2A4AE8FE5654F4489C56DCB /* SEGAliasPayload.m */,
+				69ACBFAA0CA8BC182F09636D31CDF779 /* SEGAnalytics.h */,
+				2511487901D212A66C55AD7A62356554 /* SEGAnalytics.m */,
+				8204587CD5966F74CBAFCC2B0BF8FC6C /* SEGAnalyticsConfiguration.h */,
+				6490E77D5308B56EFC0EBB29961818DE /* SEGAnalyticsConfiguration.m */,
+				F78014622108E2D04BE80236CDA1A834 /* SEGAnalyticsUtils.h */,
+				088A7C6E277AEDEE0302A36968AFF620 /* SEGAnalyticsUtils.m */,
+				72149FB8C9A24D4C99ABCFAC1AA93469 /* SEGContext.h */,
+				1A4D99ADB2B29DC5062C434BFEE598AF /* SEGContext.m */,
+				CFFCAF1D5F78270C5DBA6EECDDD18087 /* SEGCrypto.h */,
+				A77D9A1582439FC081133554D8C5D07D /* SEGFileStorage.h */,
+				6BAC29DE3892BD15915DDD161600762B /* SEGFileStorage.m */,
+				53721B5C745DFE2FC67DBD901C2BDFC8 /* SEGGroupPayload.h */,
+				E43A548257418E610239CECDA3C62E18 /* SEGGroupPayload.m */,
+				965EB0B5BBF9A1919B8CA3FD9D26DDFD /* SEGHTTPClient.h */,
+				2F520C36FA305F410BDBEE528015163B /* SEGHTTPClient.m */,
+				042EB09852ED86A23A69995F7B48A439 /* SEGIdentifyPayload.h */,
+				D57141A73F6982EE324F7965FA45BE0C /* SEGIdentifyPayload.m */,
+				51754B02C58D20037FDA6309A5FC48F0 /* SEGIntegration.h */,
+				ACE5BED1E0744B299D5CA843E91EA2A1 /* SEGIntegrationFactory.h */,
+				B2164FFAD38EF4CE18B73F7310F9EBCE /* SEGIntegrationsManager.h */,
+				705E846F2C09FE12D71CC6F77F31F4B3 /* SEGIntegrationsManager.m */,
+				3AA25E0EDA03476E1A871D86B98CE528 /* SEGMiddleware.h */,
+				E47F4B6CEFD6136A4E2DA05B345BB796 /* SEGMiddleware.m */,
+				10926403608C6913F58BD5C5B03E9246 /* SEGPayload.h */,
+				89452605EBAC26D59423194DE4EA8722 /* SEGPayload.m */,
+				4A3B4B0489E8931C73BCE48A8AB3E151 /* SEGReachability.h */,
+				56AE699187A3899CAA844CD37B649247 /* SEGReachability.m */,
+				22A1609D407FC7B7E651707621D941B9 /* SEGScreenPayload.h */,
+				6260F597116D52EF4EAD9107366ECC0D /* SEGScreenPayload.m */,
+				F95CABFB8C5A33502F211691F05D07D3 /* SEGSegmentIntegration.h */,
+				FB5732FA6A3732566C9E8A5CF2799F1D /* SEGSegmentIntegration.m */,
+				C080590F4DBA5E596EB948DD5E2EA5FF /* SEGSegmentIntegrationFactory.h */,
+				45C9267F012174D4A80217CFBCD36F6B /* SEGSegmentIntegrationFactory.m */,
+				B61C26778201D2AA5529A6900C1060BF /* SEGSerializableValue.h */,
+				2518B9945F57690350C895FA56D66CCB /* SEGStorage.h */,
+				01E3BA24A2A62422EB391010F92EDFF1 /* SEGStoreKitTracker.h */,
+				8BFF19C35F13E7755B7918C2A16393EB /* SEGStoreKitTracker.m */,
+				F2746708159168D13BE1A2933A83D4BD /* SEGTrackPayload.h */,
+				011681588D2A05ED00FB0A8648FAB51B /* SEGTrackPayload.m */,
+				BAABB6CE2DC6BE956FCE52809703AC85 /* SEGUserDefaultsStorage.h */,
+				6FA4CB51F1ACA0FA9CC333665451643A /* SEGUserDefaultsStorage.m */,
+				D2CAB8230DE9F4249706A6EDA717F9AE /* SEGUtils.h */,
+				BBE59845DF6A03BBAD90144576E774C0 /* SEGUtils.m */,
+				967CDF97C3FCE91963CBC19A30751FE1 /* UIViewController+SEGScreen.h */,
+				1C99179A0E872526CE98C2BED591BFD4 /* UIViewController+SEGScreen.m */,
+				594BEAC382C099170A8B815DE68A8E25 /* Support Files */,
+			);
+			name = Analytics;
+			path = Analytics;
+			sourceTree = "<group>";
+		};
+		ED4A2ED8EF1A323995AF4EE2F7AE0947 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE7217099B2B8DB3BDC0FBB8FB8FBC35 /* Analytics */,
+				70AF7EDE7CD9EF68B7C2BC240011B88C /* AnalyticsSwift */,
+				2FD7F08ED6BB8B461934E8B85867A088 /* Localytics */,
+				91AE0685F98787767BBC7650A30DE7ED /* Segment-Localytics */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F39123724C0316B4372E8D1814B15F3E /* Pods-SegmentLocalyticsDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				62F686400F3E29B1C4DA773F3627D364 /* Info.plist */,
+				0277846EA9B8C0DFBBCEFC01236DB1C0 /* Pods-SegmentLocalyticsDemoTests.modulemap */,
+				BBC0C87E00432191E1DEC30DDFFB4A8A /* Pods-SegmentLocalyticsDemoTests-acknowledgements.markdown */,
+				FAF4675AD0DBFE32919057C02F4844B8 /* Pods-SegmentLocalyticsDemoTests-acknowledgements.plist */,
+				BADF4347CFD1722031DC58E49A5979EF /* Pods-SegmentLocalyticsDemoTests-dummy.m */,
+				7C150CE371C963C22FF4CAB4CBB6ACB8 /* Pods-SegmentLocalyticsDemoTests-frameworks.sh */,
+				761BCB7EDDB9D85915B64348861AC4B3 /* Pods-SegmentLocalyticsDemoTests-resources.sh */,
+				2F159BEAB4C061BE353A96D2408D27D9 /* Pods-SegmentLocalyticsDemoTests-umbrella.h */,
+				0A055249569A6221E292FB660F108CA0 /* Pods-SegmentLocalyticsDemoTests.debug.xcconfig */,
+				20C601E1371FA44AADC64FD2192CDE97 /* Pods-SegmentLocalyticsDemoTests.release.xcconfig */,
+			);
+			name = "Pods-SegmentLocalyticsDemoTests";
+			path = "Target Support Files/Pods-SegmentLocalyticsDemoTests";
+			sourceTree = "<group>";
+		};
+		F5A81BD7B6D5AC25B0C2BBD74E53865B /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B675B82D8A04223C9DD5CE4EE9D95E7A /* Foundation.framework */,
+				18A20680C5170D9CFA5DF3CB7304B6C3 /* Security.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F89A0D452C319193FBDEE6E8F4ABDEF0 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1AB8A7F8E493F70BCA21F12E5CBD7F9B /* Pods-SegmentLocalyticsDemo */,
+				F39123724C0316B4372E8D1814B15F3E /* Pods-SegmentLocalyticsDemoTests */,
+				5C7013AAB5812CBD182320264A46DC58 /* Pods-SegmentLocalyticsDemoUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		FADE261741CFFFF880B0FB9857476888 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8D9B67AD384969938D81516881FEE4C5 /* Info.plist */,
+				4EBE6B83AA04603FC445F221E87D9856 /* Segment-Localytics.modulemap */,
+				F5861935925178A105602F8719042970 /* Segment-Localytics.xcconfig */,
+				AD372AD5026D6148612DA67BB6FCC439 /* Segment-Localytics-dummy.m */,
+				D4E08051457BD11DAA863807F57D6248 /* Segment-Localytics-prefix.pch */,
+				1B448729D3F07C19EE2AC16FA69E3D83 /* Segment-Localytics-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Segment-Localytics";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3229B0714F4A4A1B020C76E4E0BE23A2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3BD19C81832810100BCD9E2973FD31F /* Pods-SegmentLocalyticsDemo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C353ED274ED40B9373C81D1DB7B645A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A357941EC3C0203D9A1DE3E112529998 /* SEGLocalyticsIntegration.h in Headers */,
+				1A694AC7C67062C4561EDFA4C9A798AE /* SEGLocalyticsIntegrationFactory.h in Headers */,
+				45ED8AB3F29F60245C30DEE09AD0BBCA /* Segment-Localytics-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B985F5EE77F6152C0BE6F160468F2E10 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17CC9BCC5BED6E066DF4E4EF4A8C1557 /* Pods-SegmentLocalyticsDemoUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE9CBD0A6E178A330DB1DFBAEFD7C0DD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F1AB1C229067D5C28AFAD1EADDB78FB /* AnalyticsSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D164E270BFD1186BC8612FFDECC250F3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				366224ED62939A732DF9C3F3EA8F3929 /* Pods-SegmentLocalyticsDemoTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEFEB4666E12486CFC5FABD6AC756FE9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D7CD63EF51C78CF900E3BB4E481CBC2 /* Analytics-umbrella.h in Headers */,
+				40360117F63A80DFAFDC4C8B732E7EE3 /* NSData+SEGGZIP.h in Headers */,
+				58925FE48AE63C76B3F279A184F577E9 /* SEGAES256Crypto.h in Headers */,
+				08FDCD99391AE1F2A90EA076969B413B /* SEGAliasPayload.h in Headers */,
+				EE0F80901C88E2459A26A10AE30A4153 /* SEGAnalytics.h in Headers */,
+				E3817A695ABE7F1FC8F8F9C118F98C98 /* SEGAnalyticsConfiguration.h in Headers */,
+				06A8F4E929B0116A5DC922C29AAE5B19 /* SEGAnalyticsUtils.h in Headers */,
+				D3E5DA1D81D27439E8F8B69F4B74CFA7 /* SEGContext.h in Headers */,
+				D809C7071CD2FF4C3F9284798F6B6812 /* SEGCrypto.h in Headers */,
+				6BC6F301359A276CCA70640533CE2690 /* SEGFileStorage.h in Headers */,
+				6CFBA3D0DD5FCE4660B93921152CDCE4 /* SEGGroupPayload.h in Headers */,
+				B4D3398A3200D0BC3A72CC8523F87AF2 /* SEGHTTPClient.h in Headers */,
+				04AF3833868461758786B13AF1250348 /* SEGIdentifyPayload.h in Headers */,
+				BF62BCAABA37505565D65D30416DA4B1 /* SEGIntegration.h in Headers */,
+				1BEF3D427DE8DBE6857FDF9C63BDF3D6 /* SEGIntegrationFactory.h in Headers */,
+				8A737A3F76BBC5C04BB0B8B30CC07360 /* SEGIntegrationsManager.h in Headers */,
+				387AE6347C7F2EFD2956C28066F682A5 /* SEGMiddleware.h in Headers */,
+				EC2CA82CA2BAC6DEC85EB128692C542B /* SEGPayload.h in Headers */,
+				2FEDE2CC943F71B810A39F71557395CF /* SEGReachability.h in Headers */,
+				774A7A3EB1A94E53CBFD905326BDCB64 /* SEGScreenPayload.h in Headers */,
+				85E291E249B5A06363F2AFF0D67CB33B /* SEGSegmentIntegration.h in Headers */,
+				D2927724D26109809E245E63804CEEFF /* SEGSegmentIntegrationFactory.h in Headers */,
+				166505FCEB3327D81DFC46DE7429C691 /* SEGSerializableValue.h in Headers */,
+				4B70A68308B642AC124170601B66C783 /* SEGStorage.h in Headers */,
+				028DB23DC95D9761C35D506D17762DBF /* SEGStoreKitTracker.h in Headers */,
+				4C5BB62E74B45F20BE431C503132229B /* SEGTrackPayload.h in Headers */,
+				AFF318F4A8F9250D612ED258BF519021 /* SEGUserDefaultsStorage.h in Headers */,
+				42760845F765FEF1FE757EF196075FFD /* SEGUtils.h in Headers */,
+				F2DFD900CE7629EAA35A0171AD98FD00 /* UIViewController+SEGScreen.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		608E397731685B558C59BD518B7AB613 /* Pods-SegmentLocalyticsDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4E81F24D26D3FB8E084A4D9C81E7E71 /* Build configuration list for PBXNativeTarget "Pods-SegmentLocalyticsDemo" */;
+			buildPhases = (
+				46CD83757BDE99BC0DC849D34EF44FE8 /* Sources */,
+				87D0757F72D0CF1DA354DE6D1EADBE11 /* Frameworks */,
+				3229B0714F4A4A1B020C76E4E0BE23A2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF86E4BD46B667A1BBFA7CC7494C1530 /* PBXTargetDependency */,
+				DA0B3309FB48C7877B89A2BDC2800D63 /* PBXTargetDependency */,
+				29A9295CB8FC320493CF1FD0B95A62E7 /* PBXTargetDependency */,
+			);
+			name = "Pods-SegmentLocalyticsDemo";
+			productName = "Pods-SegmentLocalyticsDemo";
+			productReference = 3B0D5D246A5B372B52F75C03BC9F3976 /* Pods_SegmentLocalyticsDemo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9203C09D29D001DDFEC44EE7C7FDD312 /* Segment-Localytics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60BC3F94690000D314C4D35B5B3AB7F1 /* Build configuration list for PBXNativeTarget "Segment-Localytics" */;
+			buildPhases = (
+				70F54B3DC390937CD98577DD3D794EBA /* Sources */,
+				2486C607530A9B3C3E3B3CA67931C00A /* Frameworks */,
+				4C353ED274ED40B9373C81D1DB7B645A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4AD5EFA05C381CF20074A1763AE8A945 /* PBXTargetDependency */,
+			);
+			name = "Segment-Localytics";
+			productName = "Segment-Localytics";
+			productReference = EB60442066A034A4E9C347DCA5638E16 /* Segment_Localytics.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AD9795FB1377C19B6BEE2A1753897098 /* Pods-SegmentLocalyticsDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A51EB4FE661155A85FA9310262F633A /* Build configuration list for PBXNativeTarget "Pods-SegmentLocalyticsDemoUITests" */;
+			buildPhases = (
+				61AC8229B4FDE0A2B78B3A5FDD2057D8 /* Sources */,
+				171F50C1845EF773AEFBDB3707B3CF83 /* Frameworks */,
+				B985F5EE77F6152C0BE6F160468F2E10 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SegmentLocalyticsDemoUITests";
+			productName = "Pods-SegmentLocalyticsDemoUITests";
+			productReference = F2EBFF718C3FEBF8EAD695A9BEF408C8 /* Pods_SegmentLocalyticsDemoUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AE1DD9B213B2436139A27922A687BBC4 /* Analytics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C23D659BFD5F1571DAB26212EB6D5BCE /* Build configuration list for PBXNativeTarget "Analytics" */;
+			buildPhases = (
+				69A376F26C0EFC3040D4E955974433DF /* Sources */,
+				9B890DCAD4667C8E067878F22887CD68 /* Frameworks */,
+				EEFEB4666E12486CFC5FABD6AC756FE9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Analytics;
+			productName = Analytics;
+			productReference = D01E10F79FA5065C3C7BF87D1930D779 /* Analytics.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C17277E175ACF498AA31B4C8D6DDCA2B /* Pods-SegmentLocalyticsDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4240D3DE9184E7EFA1F1C0768EECB9D0 /* Build configuration list for PBXNativeTarget "Pods-SegmentLocalyticsDemoTests" */;
+			buildPhases = (
+				630DAB748728BEF80ECC916E906FDB1D /* Sources */,
+				A4EC9DC246B9E862C8B2BE0FE49FB2B9 /* Frameworks */,
+				D164E270BFD1186BC8612FFDECC250F3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SegmentLocalyticsDemoTests";
+			productName = "Pods-SegmentLocalyticsDemoTests";
+			productReference = 9827ED5CDE35E7915E006E67225DAC40 /* Pods_SegmentLocalyticsDemoTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		ECEE627A78823A29ADD352ADCD154B40 /* AnalyticsSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD1A5F3E4AC03CC2D5218A8BADD1C470 /* Build configuration list for PBXNativeTarget "AnalyticsSwift" */;
+			buildPhases = (
+				08273A428D9D046DC656E6594FDE6D6A /* Sources */,
+				13604880E01D5F23DB5A5F6350293471 /* Frameworks */,
+				BE9CBD0A6E178A330DB1DFBAEFD7C0DD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AnalyticsSwift;
+			productName = AnalyticsSwift;
+			productReference = 1961C245464E0FDD2AEBF3E90F0E5C81 /* AnalyticsSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 230471ECACB8EEB5F25CAE5D9D300D40 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE1DD9B213B2436139A27922A687BBC4 /* Analytics */,
+				ECEE627A78823A29ADD352ADCD154B40 /* AnalyticsSwift */,
+				608E397731685B558C59BD518B7AB613 /* Pods-SegmentLocalyticsDemo */,
+				C17277E175ACF498AA31B4C8D6DDCA2B /* Pods-SegmentLocalyticsDemoTests */,
+				AD9795FB1377C19B6BEE2A1753897098 /* Pods-SegmentLocalyticsDemoUITests */,
+				9203C09D29D001DDFEC44EE7C7FDD312 /* Segment-Localytics */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08273A428D9D046DC656E6594FDE6D6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EEC2985028F55BB8D237BE9686D8C5A /* AliasMessageBuilder.swift in Sources */,
+				F288939258F23E44922F2CF6B1BF0004 /* Analytics.swift in Sources */,
+				C66AE33FB629528AAAA7937092854CAD /* AnalyticsSwift-dummy.m in Sources */,
+				6671A852E1FEE4356E3F9814DAB55C16 /* Credentials.swift in Sources */,
+				A4940B73BC0AB35E3D7B6FE2CFFD5095 /* Executor.swift in Sources */,
+				AC977C26275770D4C41D7B5B543CCFCE /* GroupMessageBuilder.swift in Sources */,
+				97DE611DDC4BFFC695C3D00A3F9C0496 /* IdentifyMessageBuilder.swift in Sources */,
+				0AB997B382C4EFCFFE4C7C63E102521F /* MessageBuilder.swift in Sources */,
+				963AFB3D63443D00E4EACADDCD783726 /* ScreenMessageBuilder.swift in Sources */,
+				C3ECBE9107DA4A2C2D07D72BF4FCA2B9 /* SerialExecutor.swift in Sources */,
+				FF7350E17CE29DD51E04453295841DCB /* TrackMessageBuilder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46CD83757BDE99BC0DC849D34EF44FE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57C4AD4132C28DE9A7B62B89E27DA353 /* Pods-SegmentLocalyticsDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61AC8229B4FDE0A2B78B3A5FDD2057D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8B9B61F8435FC380E7B6F5C0BABAA76 /* Pods-SegmentLocalyticsDemoUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		630DAB748728BEF80ECC916E906FDB1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AFA71F54EF12A5715FF397A350337F5 /* Pods-SegmentLocalyticsDemoTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69A376F26C0EFC3040D4E955974433DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C7BBDC18CFDAF7D85983FF4218BC87D /* Analytics-dummy.m in Sources */,
+				78FB32E5AC45218FB83A8001A8E68808 /* NSData+SEGGZIP.m in Sources */,
+				94EF76B0F52F21FE53AE5BE1050C8D91 /* SEGAES256Crypto.m in Sources */,
+				15B805BD8450F92206B74428FDD31E62 /* SEGAliasPayload.m in Sources */,
+				7E5823E95ED0A21BA74F3A7A93006C72 /* SEGAnalytics.m in Sources */,
+				908EA2C3B9EC1431AA003E41E181E3F5 /* SEGAnalyticsConfiguration.m in Sources */,
+				E57869B210DBE54A80F57E7F9D9B4B7F /* SEGAnalyticsUtils.m in Sources */,
+				5CA406B4E9CEB4D22169B915068AAD35 /* SEGContext.m in Sources */,
+				62C50D0ABDA436994489AE5EABD1393E /* SEGFileStorage.m in Sources */,
+				FAF1ACEFAB9B56DCF0434FA723A03D60 /* SEGGroupPayload.m in Sources */,
+				D5718EF59FF3535D151556FC06235296 /* SEGHTTPClient.m in Sources */,
+				E18341A0210C32B8EB64E284FE4C3756 /* SEGIdentifyPayload.m in Sources */,
+				A2089EBFC7B28AFF45CC17C929CFE5D6 /* SEGIntegrationsManager.m in Sources */,
+				A5038E8FF91BB5D3E3F1C6128CE903AB /* SEGMiddleware.m in Sources */,
+				FEC0DE602460F59BBB6C3A4A57015362 /* SEGPayload.m in Sources */,
+				803112CD13B0CC1D661F8B07DB4BD22A /* SEGReachability.m in Sources */,
+				CC65368DDA77E8947FECA61F8D034D43 /* SEGScreenPayload.m in Sources */,
+				1CE668DD58FB6350A39DBB3F877986BD /* SEGSegmentIntegration.m in Sources */,
+				1841430F4BC49E03B9B9EEB085AE5D39 /* SEGSegmentIntegrationFactory.m in Sources */,
+				C160D255864ED2572A2B3CC3A6526A3E /* SEGStoreKitTracker.m in Sources */,
+				EE7501F14EB40A3CB38CBB4E8CDEA4E3 /* SEGTrackPayload.m in Sources */,
+				EE0A873F71115EC79394B14B05513D33 /* SEGUserDefaultsStorage.m in Sources */,
+				05B02FB04AC7960097979A27838A329F /* SEGUtils.m in Sources */,
+				BBA96EBF9E524228BB44D12CA71EA6C5 /* UIViewController+SEGScreen.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70F54B3DC390937CD98577DD3D794EBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				923CEEF5260C823D2B9D3AE5C36EBADD /* SEGLocalyticsIntegration.m in Sources */,
+				7BE4DC635D379A036E9853979A9BE61E /* SEGLocalyticsIntegrationFactory.m in Sources */,
+				FEC90AAD12181BF71A61E09AB02F4E2D /* Segment-Localytics-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		29A9295CB8FC320493CF1FD0B95A62E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Segment-Localytics";
+			target = 9203C09D29D001DDFEC44EE7C7FDD312 /* Segment-Localytics */;
+			targetProxy = 04D5BF4822A986F15F8CB6909EC1295C /* PBXContainerItemProxy */;
+		};
+		4AD5EFA05C381CF20074A1763AE8A945 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Analytics;
+			target = AE1DD9B213B2436139A27922A687BBC4 /* Analytics */;
+			targetProxy = 482EAD914C66B410CFDCADF4E4092928 /* PBXContainerItemProxy */;
+		};
+		AF86E4BD46B667A1BBFA7CC7494C1530 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Analytics;
+			target = AE1DD9B213B2436139A27922A687BBC4 /* Analytics */;
+			targetProxy = 93F6EA068FB59540E2083A36AAFA4BBC /* PBXContainerItemProxy */;
+		};
+		DA0B3309FB48C7877B89A2BDC2800D63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AnalyticsSwift;
+			target = ECEE627A78823A29ADD352ADCD154B40 /* AnalyticsSwift */;
+			targetProxy = 6FA1AD167121A26D5EAD7CA599B71396 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0FEB84EEE7F20B07D331F075D74A1951 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E25846A3BD6F2307049D6E5605C0833A /* Pods-SegmentLocalyticsDemo.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SegmentLocalyticsDemo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SegmentLocalyticsDemo/Pods-SegmentLocalyticsDemo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SegmentLocalyticsDemo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1A41B15D3AA834993ADDD808FA9D8764 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		36868D15C5F3F005DA545C31ABCC5009 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57E578989B3784EACBD18B89679C7A2A /* Analytics.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Analytics/Analytics-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Analytics/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Analytics/Analytics.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Analytics;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5DDA64D167730A9DBF31BCBCF1F92968 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92DFFB3D446644ED768CCFB8C27EE5BB /* AnalyticsSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AnalyticsSwift/AnalyticsSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AnalyticsSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AnalyticsSwift/AnalyticsSwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AnalyticsSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		659195C93D7089C77B56F391F6986392 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57E578989B3784EACBD18B89679C7A2A /* Analytics.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Analytics/Analytics-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Analytics/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Analytics/Analytics.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Analytics;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		77DCF3CAA0A98578E4528BA123A55DD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38DEA0E713B9AB27B4CE14F42FCD4491 /* Pods-SegmentLocalyticsDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SegmentLocalyticsDemoUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SegmentLocalyticsDemoUITests/Pods-SegmentLocalyticsDemoUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SegmentLocalyticsDemoUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7B71C5AE93CEBDC0A935ADACB90CF09F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5861935925178A105602F8719042970 /* Segment-Localytics.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Segment-Localytics/Segment-Localytics-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Segment-Localytics/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Segment-Localytics/Segment-Localytics.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Segment_Localytics;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8DB950047DF3979285ACAF173CB91055 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F3E886064B7C1F9446FD484F2C010AE /* Pods-SegmentLocalyticsDemo.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SegmentLocalyticsDemo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SegmentLocalyticsDemo/Pods-SegmentLocalyticsDemo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SegmentLocalyticsDemo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BC80BBB5C066539FFFC0B2127CA5D3C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C4511EE3662817F5A5EF7CB25CC942CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20C601E1371FA44AADC64FD2192CDE97 /* Pods-SegmentLocalyticsDemoTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SegmentLocalyticsDemoTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SegmentLocalyticsDemoTests/Pods-SegmentLocalyticsDemoTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SegmentLocalyticsDemoTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CC59CEEAB6448FC9631790D5F4DA5931 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92DFFB3D446644ED768CCFB8C27EE5BB /* AnalyticsSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AnalyticsSwift/AnalyticsSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AnalyticsSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AnalyticsSwift/AnalyticsSwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AnalyticsSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EDF6750B2F8A46160FDC81F6E1515041 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5861935925178A105602F8719042970 /* Segment-Localytics.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Segment-Localytics/Segment-Localytics-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Segment-Localytics/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Segment-Localytics/Segment-Localytics.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Segment_Localytics;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F8601A73378661E778825BCD47E2964D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F31089ED7A58F14B4F9A1E966C83D46B /* Pods-SegmentLocalyticsDemoUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SegmentLocalyticsDemoUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SegmentLocalyticsDemoUITests/Pods-SegmentLocalyticsDemoUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SegmentLocalyticsDemoUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F899E8C1969C09A516258A4B8DD07C23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A055249569A6221E292FB660F108CA0 /* Pods-SegmentLocalyticsDemoTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SegmentLocalyticsDemoTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SegmentLocalyticsDemoTests/Pods-SegmentLocalyticsDemoTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SegmentLocalyticsDemoTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC80BBB5C066539FFFC0B2127CA5D3C4 /* Debug */,
+				1A41B15D3AA834993ADDD808FA9D8764 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4240D3DE9184E7EFA1F1C0768EECB9D0 /* Build configuration list for PBXNativeTarget "Pods-SegmentLocalyticsDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F899E8C1969C09A516258A4B8DD07C23 /* Debug */,
+				C4511EE3662817F5A5EF7CB25CC942CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60BC3F94690000D314C4D35B5B3AB7F1 /* Build configuration list for PBXNativeTarget "Segment-Localytics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDF6750B2F8A46160FDC81F6E1515041 /* Debug */,
+				7B71C5AE93CEBDC0A935ADACB90CF09F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A51EB4FE661155A85FA9310262F633A /* Build configuration list for PBXNativeTarget "Pods-SegmentLocalyticsDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77DCF3CAA0A98578E4528BA123A55DD1 /* Debug */,
+				F8601A73378661E778825BCD47E2964D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4E81F24D26D3FB8E084A4D9C81E7E71 /* Build configuration list for PBXNativeTarget "Pods-SegmentLocalyticsDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DB950047DF3979285ACAF173CB91055 /* Debug */,
+				0FEB84EEE7F20B07D331F075D74A1951 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD1A5F3E4AC03CC2D5218A8BADD1C470 /* Build configuration list for PBXNativeTarget "AnalyticsSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC59CEEAB6448FC9631790D5F4DA5931 /* Debug */,
+				5DDA64D167730A9DBF31BCBCF1F92968 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C23D659BFD5F1571DAB26212EB6D5BCE /* Build configuration list for PBXNativeTarget "Analytics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				659195C93D7089C77B56F391F6986392 /* Debug */,
+				36868D15C5F3F005DA545C31ABCC5009 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

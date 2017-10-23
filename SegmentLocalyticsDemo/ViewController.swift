@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Localytics
 
 class ViewController: UIViewController {
 

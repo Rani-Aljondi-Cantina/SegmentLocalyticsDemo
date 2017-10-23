@@ -7,15 +7,20 @@
 //
 
 import UIKit
+import Segment_Localytics
+import Analytics
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    let configuration:SEGAnalyticsConfiguration = SEGAnalyticsConfiguration(writeKey:"Nrl5XMBr8Dfiq6IhTF4xdQnS6LVmCG8I");
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        configuration.enableAdvertisingTracking = true
+        configuration.recordScreenViews = true
+        SEGAnalytics.setup(with: configuration)
         return true
     }
 
